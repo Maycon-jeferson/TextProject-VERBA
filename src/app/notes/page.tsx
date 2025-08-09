@@ -1,10 +1,10 @@
 'use client'
 
 import { useRouter } from "next/navigation"
-import { Button } from "../../layout/Button"
-import NoteEdit from "@/components/NoteEdit/NoteEdit"
+import { Button } from "@/components/ui/button"
+import NoteEditor from "@/features/notes/NoteEditor"
 
-export default function NewFinance() {
+export default function NotesPage() {
     const router = useRouter()
     return (
         <div className="min-h-screen bg-black text-white p-6">
@@ -14,7 +14,7 @@ export default function NewFinance() {
                 </Button>
             </div>
 
-            <NoteEdit />
+            <NoteEditor />
         </div>
     )
 }

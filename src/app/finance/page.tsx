@@ -1,8 +1,8 @@
 'use client'
 
 import { useRouter } from "next/navigation"
-import { Button } from "../../layout/Button" // Certifique-se que esse botão está corretamente implementado
-import FinanceEdit from "@/components/FinanceEdit/FinanceEdit";
+import { Button } from "@/components/ui/button"
+import FinanceEditor from "@/features/finance/FinanceEditor";
 
 export default function NewFinance() {
     const router = useRouter();
@@ -19,7 +19,7 @@ export default function NewFinance() {
                 </Button>
             </div>
 
-            <FinanceEdit />
+            <FinanceEditor />
         </div>
     );
 }

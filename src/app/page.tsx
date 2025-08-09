@@ -1,7 +1,7 @@
 "use client";
 
-import { NotesLayout } from '../layout/Header/Header'
-import { NoteInput } from '../layout/NoteInput/NoteInput'
+import NotesLayout from '@/components/layout/NotesLayout'
+import { NoteInput } from '@/features/notes/components/NoteInput'
 
 export default function Home() {
   return (
